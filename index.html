@@ -1,18 +1,53 @@
-<header style="background-color: #b3e5fc; padding: 1rem; text-align: center;">
-  <h1 style="margin: 0;">fuuchi</h1>
-  <nav>
-    <a href="https://shop.fuuchi.com" style="color: #007acc; text-decoration: none;">オンラインストアへ</a>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fuuchi</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #ffffff; }
+    header { background-color: #4FC3F7; padding: 1rem; text-align: center; color: #fff; }
+    header h1 { margin: 0; font-weight: normal; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    main { text-align: center; padding: 2rem 1rem; }
+    img.main-banner { width: 100%; max-width: 1200px; height: auto; border-radius: 8px; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: calc(50% - 1rem);
+      max-width: 480px;
+      height: auto;
+      border-radius: 6px;
+    }
+    footer { background-color: #E1F5FE; text-align: center; padding: 1rem; color: #333; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>fuuchi</h1>
+    <nav>
+      <a href="https://shop.fuuchi.com" target="_blank">オンラインストアへ</a>
+    </nav>
+  </header>
 
-<main style="text-align: center;">
-  <img src="images/top.jpg" alt="Fuuchiバナー" style="width: 100%; max-width: 960px; margin: 2rem auto;" />
-  <p style="max-width: 720px; margin: 2rem auto;">
-    fuuchi は、自然の恵みを活かした、からだにやさしい調味料やスイーツを届けるブランドです。
-    毎日の食卓に、ささやかな驚きと余白を。
-  </p>
-</main>
+  <main>
+    <img src="images/DSC00983-強化-NR.jpg" alt="トップバナー" class="main-banner">
 
-<footer style="background-color: #e0f7fa; text-align: center; padding: 1rem;">
-  <small>&copy; 2025 fuuchi</small>
-</footer>
+    <div class="gallery">
+      <img src="images/DSC01012-強化-NR.jpg" alt="植物の種">
+      <img src="images/IMG_0985.jpg" alt="商品一覧">
+      <img src="images/DSC00994.jpg" alt="植物を眺める人">
+      <img src="images/DSC01001-強化-NR.jpg" alt="農場と人物の後ろ姿">
+    </div>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 fuuchi</small>
+  </footer>
+</body>
+</html>
