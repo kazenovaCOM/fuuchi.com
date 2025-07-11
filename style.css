@@ -1,99 +1,114 @@
-/* メイン画像中央揃え */
+/* ベース設定 */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background-color: #4FC3F7;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+header nav a:hover {
+  opacity: 0.8;
+}
+
+/* キャッチコピー */
+.catchcopy {
+  text-align: center;
+  margin: 3rem 1rem 2rem;
+  font-size: 1.4rem;
+  color: #1976D2;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+/* メインバナー */
 .main-banner {
   display: block;
-  margin: 2rem auto 2rem auto; /* 上下にスペース、中央揃え */
+  margin: 0 auto 2rem;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* キャッチコピーのスペース調整 */
-.catchcopy {
-  font-size: 1.3rem;
-  color: #2196F3;
-  font-weight: 500;
-  text-align: center;
-  margin: 3rem 0 1.5rem 0; /* 上にしっかりスペース */
-  letter-spacing: 0.09em;
-}
-
-/* ブランド説明は左寄せ */
+/* ブランド紹介 */
 .brand-desc {
-  text-align: left;
-  font-size: 1.1rem;
-  color: #444;
-  margin: 2em auto 2.5em auto;
   max-width: 1000px;
-  padding: 0 1rem;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 0 1.5rem;
+  color: #444;
 }
 
-/* ギャラリー 2列2段（PC時） */
+/* ギャラリー */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   max-width: 1000px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
 }
 .gallery img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
   object-fit: cover;
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .gallery img:hover {
-  transform: translateY(-4px) scale(1.035);
-  box-shadow: 0 8px 32px rgba(33,150,243,0.15);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 32px rgba(33, 150, 243, 0.15);
 }
 
-/* レスポンシブ：スマホでは1列に */
+/* フッター */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #E1F5FE;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* モバイル対応 */
 @media (max-width: 600px) {
-  .main-banner { max-width: 100vw; }
-  .catchcopy { font-size: 1rem; margin: 2rem 0 1rem 0; }
-  .brand-desc { font-size: 1rem; padding: 0 0.5rem; }
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    max-width: 100vw;
+  header h1 {
+    font-size: 1.3rem;
   }
-}
-/* ヘッダー全体のスタイル */
-header {
-  background-color: #4FC3F7;
-  color: #fff;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* ヘッダー内の配置調整 */
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* タイトルスタイル */
-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-/* ナビゲーションリンクのスタイル */
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-header nav a:hover {
-  text-decoration: underline;
+  .catchcopy {
+    font-size: 1.1rem;
+    margin: 2rem 1rem 1.5rem;
+  }
+  .brand-desc {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
