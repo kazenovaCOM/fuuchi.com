@@ -90,7 +90,7 @@ footer {
   border-top: 1px solid #bbdefb;
 }
 @media (max-width: 600px) {
-  header h1 { font-size: 2rem; }
+  header h1 { font-size: 3rem; }
   .catchcopy { font-size: 1rem; }
   .gallery { gap: 1rem; }
   .gallery img { width: 100%; }
