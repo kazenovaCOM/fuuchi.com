@@ -3,29 +3,6 @@ header {
   position: relative;
 }
 header h1 {
-  font-size: 3rem;         /* タイトルを大きく */
-  font-weight: 700;
-  margin-bottom: 0.3em;
-  letter-spacing: 0.06em;
-}
-
-.sub-title {
-  font-size: 1.1rem;       /* キャッチコピーをやや控えめに */
-  font-weight: 400;
-  color: #e3f2fd;
-  margin-bottom: 1.2em;
-  letter-spacing: 0.09em;
-}
-nav {
-  margin-top: 0.5em;
-}
-.brand-desc {
-  font-size: 1.1rem;
-  margin-bottom: 2em;
-  color: #444;
-}
-
-header h1 {
   font-size: 3rem;      /* PC用（大きめ） */
   font-weight: 700;
   margin-bottom: 0.3em;
