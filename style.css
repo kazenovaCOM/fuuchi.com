@@ -3,13 +3,17 @@ header {
   position: relative;
 }
 header h1 {
-  margin-bottom: 0.2em;
+  font-size: 3rem;         /* タイトルを大きく */
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.06em;
 }
+
 .sub-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;       /* キャッチコピーをやや控えめに */
   font-weight: 400;
-  margin-bottom: 1.2em;
   color: #e3f2fd;
+  margin-bottom: 1.2em;
   letter-spacing: 0.09em;
 }
 nav {
