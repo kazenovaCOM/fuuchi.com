@@ -1,0 +1,22 @@
+header {
+  /* 既存のまま */
+  position: relative;
+}
+header h1 {
+  margin-bottom: 0.2em;
+}
+.sub-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2em;
+  color: #e3f2fd;
+  letter-spacing: 0.09em;
+}
+nav {
+  margin-top: 0.5em;
+}
+.brand-desc {
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+  color: #444;
+}
