@@ -19,7 +19,7 @@ header h1 {
 /* スマホ用（画面が600px以下の時） */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 3rem;    /* スマホでは少し小さく */
+    font-size: 13rem;    /* スマホでは少し小さく */
   }
   .sub-title {
     font-size: 1rem;    /* スマホではさらに控えめに */
