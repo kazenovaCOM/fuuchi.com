@@ -24,3 +24,27 @@ nav {
   margin-bottom: 2em;
   color: #444;
 }
+
+header h1 {
+  font-size: 3rem;      /* PC用（大きめ） */
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.06em;
+}
+
+.sub-title {
+  font-size: 1.1rem;    /* PC用 */
+  color: #e3f2fd;
+  margin-bottom: 1.2em;
+  letter-spacing: 0.09em;
+}
+
+/* スマホ用（画面が600px以下の時） */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;    /* スマホでは少し小さく */
+  }
+  .sub-title {
+    font-size: 1rem;    /* スマホではさらに控えめに */
+  }
+}
