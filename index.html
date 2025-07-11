@@ -3,119 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>fuuchi</title>
-  <style>
-    :root {
-      --main-color: #2196F3;
-      --accent-color: #00bcd4;
-      --bg-color: #fafbfc;
-      --card-bg: #fff;
-      --shadow: 0 4px 24px rgba(0,0,0,0.09);
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Noto Sans JP', Helvetica, Arial, sans-serif;
-      background: var(--bg-color);
-      color: #222;
-      letter-spacing: 0.02em;
-    }
-    header {
-      background: linear-gradient(90deg, var(--main-color) 70%, var(--accent-color));
-      padding: 2rem 1rem 1rem 1rem;
-      text-align: center;
-      color: #fff;
-      box-shadow: var(--shadow);
-    }
-    header h1 {
-      margin: 0 0 0.5rem 0;
-      font-weight: 600;
-      font-size: 2.3rem;
-      letter-spacing: 0.07em;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 2px solid rgba(255,255,255,0.4);
-      padding: 0.2em 0.4em;
-      transition: border 0.2s;
-    }
-    nav a:hover {
-      border-bottom: 2px solid #fff;
-      opacity: 0.9;
-    }
-    main {
-      text-align: center;
-      padding: 3rem 1rem 2rem 1rem;
-    }
-    img.main-banner {
-      width: 100%;
-      max-width: 1000px;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 2px 24px rgba(0,0,0,0.10);
-      margin-bottom: 2.5rem;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .gallery img {
-      width: 320px;
-      max-width: 90vw;
-      border-radius: 10px;
-      background: var(--card-bg);
-      box-shadow: var(--shadow);
-      object-fit: cover;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .gallery img:hover {
-      transform: translateY(-4px) scale(1.035);
-      box-shadow: 0 8px 32px rgba(33,150,243,0.15);
-    }
-    footer {
-      background: #e3f2fd;
-      text-align: center;
-      padding: 2rem 1rem 1rem 1rem;
-      color: #666;
-      margin-top: 4rem;
-      font-size: 1rem;
-      border-top: 1px solid #bbdefb;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.4rem; }
-      .gallery { gap: 1rem; }
-      .gallery img { width: 100%; }
-      main { padding: 1.5rem 0.2rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>fuuchi</h1>
-    <div class="sub-title">今日を癒す、自分に還る。</div>
-    <nav>
-      <a href="https://flusso.jp/shop" target="_blank">Flusso Online Store</a>
-    </nav>
+    <div class="header-inner">
+      <h1>fuuchi</h1>
+      <nav>
+        <ul>
+          <li><a href="https://flusso.jp/shop" target="_blank">Flusso Online Store</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="catchcopy">今日を癒す、自分に還る。</div>
   </header>
 
   <main>
-    <p class="brand-desc">
-      fuuchi（フウチ）は、高品質なハーブや植物などを使った製品のブランドです。<br>
-      商品の詳細やお買い求めはFlussoのオンラインストアから。
-    </p>
+    <section class="brand-desc">
+      <p>
+        fuuchi（フウチ）は、高品質なハーブや植物などを使った製品のブランドです。<br>
+        商品の詳細やお買い求めはFlussoのオンラインストアから。
+      </p>
+    </section>
+
     <img src="images/DSC00983-強化-NR.jpg" alt="トップバナー" class="main-banner">
 
-    <div class="gallery">
+    <section class="gallery">
       <img src="images/DSC01012-強化-NR.jpg" alt="植物の種">
       <img src="images/IMG_0985.jpg" alt="商品一覧">
       <img src="images/DSC00994.jpg" alt="植物を眺める人">
       <img src="images/DSC01001-強化-NR.jpg" alt="農場と人物の後ろ姿">
-    </div>
+    </section>
   </main>
 
   <footer>
